@@ -1,3 +1,3 @@
 Ce repository regroupe mon travail autour du Flipper Zero et de ces applications
 
-![Flipper Zero](https://github.com/kal-u/FlipperZero/blob/main/flipper.png)
+![Flipper Zero](https://raw.githubusercontent.com/kal-u/FlipperZero/refs/heads/main/flipper.png)
