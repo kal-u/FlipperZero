@@ -1,8 +1,12 @@
-# Flipper repo
+# Sub-GHz
+Cette section regroupe mes différents projets autour de l'analyse ou de la création de fichier .sub de l'application Sub-GHz
 
 ## Hack the Th
 Ce script a pour objectif de générer un fichier .sub utilisable par l'application Sub GHz du Flipper Zero
 pour simuler l'envoi d'information d'une sonde pour station météo utilisant le protocole Nexus-TH.
+
+## Weather station raw analyse
+Ce script a pour objectif d'analyser un fichier RAW .sub (produit par l'application Sub GHz) lors de la capture d'un signal envoyé par un capteur de station météo utilisant le protocole Nexus-TH.
 
 ### Disclaimer
 Toutes les informations présentes ici sont exposées à titre informatif et éducatif.
@@ -66,12 +70,12 @@ La signification des bits:
 
 >La chaine Youtube de Kanjian : https://www.youtube.com/@kanjian_fr
 
-### Exemple d'utilisation
+### Exemple d'utilisation du script hack_the_th.py
 ```
 ####################################################
 # Script de generation d'un fichier .sub (Sub GHz) #
 #                pour Flipper Zero                 #
-#                     Par Kalu                     #
+#                     par Kalu                     #
 ####################################################
 
 Entrez l'identifiant de la sonde (un nombre de 2 chiffres) : 40
@@ -85,3 +89,40 @@ Le fichier th.sub a été créé avec succès.
 ```
 
 ![Envoi du fichier th.sub](https://github.com/kal-u/flipper/blob/main/flipper_subGHz_Nexus-TH.png)
+
+### Exemple d'utilisation du script weather_station_raw_analyse.py
+```
+#######################################################
+# Script de d'analyse d'un fichier RAW .sub (Sub GHz) #
+#     issu de la capture d'un signal d'un capteur     #
+#   de station météo utilisant le protocole Nexus-TH  #
+#                  pour Flipper Zero                  #
+#                       par Kalu                      #
+#######################################################
+
+
+Sequence 1: 110010011000000000110011111101001000
+  Batterie: OK
+  Canal: CH1
+  Température: 5.1 °C
+  Humidité: 72%
+
+Sequence 2: 110010011000000000110011111101001000
+  Batterie: OK
+  Canal: CH1
+  Température: 5.1 °C
+  Humidité: 72%
+
+Sequence 3: 110010011000000000110011111101001000
+  Batterie: OK
+  Canal: CH1
+  Température: 5.1 °C
+  Humidité: 72%
+
+Sequence 4: 110010011000000000110011111101001000
+  Batterie: OK
+  Canal: CH1
+  Température: 5.1 °C
+  Humidité: 72%
+
+```
