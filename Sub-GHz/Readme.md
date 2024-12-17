@@ -6,7 +6,8 @@ Ce script a pour objectif de générer un fichier .sub utilisable par l'applicat
 pour simuler l'envoi d'information d'une sonde pour station météo utilisant le protocole Nexus-TH.
 
 ## Weather station raw analyse
-Ce script a pour objectif d'analyser un fichier RAW .sub (produit par l'application Sub GHz) lors de la capture d'un signal envoyé par un capteur de station météo utilisant le protocole Nexus-TH.
+Ce script a pour objectif d'analyser un fichier RAW .sub (produit par l'application Sub GHz / Read RAW) lors de la capture d'un signal envoyé par un capteur de station météo utilisant le protocole Nexus-TH.
+Recommandation : pour capturer un fichier exploitable sans trop d'interférences, il faut positionner le "RSSI Threshold" autour de  -70.0
 
 ### Disclaimer
 Toutes les informations présentes ici sont exposées à titre informatif et éducatif.
