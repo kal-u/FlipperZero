@@ -92,38 +92,5 @@ Le fichier th.sub a été créé avec succès.
 ![Envoi du fichier th.sub](https://github.com/kal-u/FlipperZero/blob/main/Sub-GHz/flipper_subGHz_Nexus-TH.png)
 
 ### Exemple d'utilisation du script weather_station_raw_analyse.py
-```
-#######################################################
-# Script de d'analyse d'un fichier RAW .sub (Sub GHz) #
-#     issu de la capture d'un signal d'un capteur     #
-#   de station météo utilisant le protocole Nexus-TH  #
-#                  pour Flipper Zero                  #
-#                       par Kalu                      #
-#######################################################
 
-
-Sequence 1: 110010011000000000110011111101001000
-  Batterie: OK
-  Canal: CH1
-  Température: 5.1 °C
-  Humidité: 72%
-
-Sequence 2: 110010011000000000110011111101001000
-  Batterie: OK
-  Canal: CH1
-  Température: 5.1 °C
-  Humidité: 72%
-
-Sequence 3: 110010011000000000110011111101001000
-  Batterie: OK
-  Canal: CH1
-  Température: 5.1 °C
-  Humidité: 72%
-
-Sequence 4: 110010011000000000110011111101001000
-  Batterie: OK
-  Canal: CH1
-  Température: 5.1 °C
-  Humidité: 72%
-
-```
+![Exécution du script weather_station_raw_analyse.py](https://github.com/kal-u/FlipperZero/blob/main/Sub-GHz/weather_station_raw_analyse.png)
