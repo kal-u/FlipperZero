@@ -31,6 +31,18 @@ def print_banner(text, width=80, fill_char='*'):
 print_banner("Script de d'analyse d'un fichier RAW .sub (Sub GHz)\nissu de la capture d'un signal d'un capteur \nde station météo utilisant le protocole Nexus-TH\npour Flipper Zero\npar Kalu", fill_char='#')
 print()
 
+# Fonction pour décoder correctement la température qui peut être positive ou négative
+def decode_12bit_signed(binary_string):
+    #Convertir la chaîne binaire en entier
+    value = int(''.join(map(str, binary_string)), 2) # Valeur décimale
+   
+    # Si le bit de poids fort est 1 alors c'est une température négative 
+    if(binary_string[0] != 0):
+        # Température négative, convertir en complément à un
+        value = value - 0b1000000000000  # Soustraire 2^12 pour obtenir le nombre signé
+    
+    return value / 10.0      # On divise par 10 pour avoir la valeur réelle
+
 
 # Fonction pour traiter les données RAW
 def process_raw_data(file_path):
@@ -71,7 +83,7 @@ def process_raw_data(file_path):
             channel_binary = binary_sequence[10:12]  # 11ème et 12ème chiffres
             channel = int(''.join(map(str, channel_binary)), 2)  # Convertir en décimal
             temp_binary = binary_sequence[12:24]  # 12 chiffres suivants
-            temperature = int(''.join(map(str, temp_binary)), 2) / 10.0  # Valeur décimale
+            temperature = decode_12bit_signed(temp_binary)
             humidity_binary = binary_sequence[28:36]  # 8 derniers chiffres
             humidity = int(''.join(map(str, humidity_binary)), 2)  # Valeur décimale
 
@@ -100,13 +112,39 @@ file_path = sys.argv[1]
 try:
     results = process_raw_data(file_path)
     for i, result in enumerate(results):
+        sequence = result['sequence']
+        
+        # Découper la séquence en parties
+        orange_part = sequence[:8]
+        blanc_part = sequence[8:9]
+        rouge_part = sequence[9:10]
+        vert_part = sequence[10:12]
+        jaune_part = sequence[12:24]
+        rouge_part2 = sequence[24:28]
+        bleu_part = sequence[28:]
+        
+        # Appliquer les couleurs ANSI
+        highlighted_sequence = (
+            f"\033[38;5;214m{orange_part}\033[0m"  # Orange
+            f"\033[0m{blanc_part}\033[0m"         # Blanc
+            f"\033[91m{rouge_part}\033[0m"           # Rouge
+            f"\033[92m{vert_part}\033[0m"        # Vert
+            f"\033[93m{jaune_part}\033[0m"        # Jaune
+            f"\033[91m{rouge_part2}\033[0m"           # Rouge
+            f"\033[94m{bleu_part}\033[0m"          # Bleu
+        )
+        
+        # Afficher les résultats
         print()
-        print(f"\033[96mSequence {i+1}: {result['sequence']}\033[0m")
+        print(f"\033[96mSequence {i+1}: {highlighted_sequence}\033[0m")
         print(f"  Batterie: {result['battery_status']}")
-        print(f"  Canal: {result['channel']}")
-        print(f"  Température: {result['temperature']} °C")
-        print(f"  Humidité: {result['humidity']}%")
+        print(f"  Canal: \033[92m{result['channel']}\033[0m")
+        print(f"  Température: \033[93m{result['temperature']} °C\033[0m")
+        print(f"  Humidité: \033[94m{result['humidity']}%\033[0m")
 except FileNotFoundError:
     print(f"\033[91mErreur: Le fichier spécifié '{file_path}' est introuvable.\033[0m")
 except Exception as e:
     print(f"\033[91mErreur lors du traitement du fichier: {e}\033[0m")
+
+print()
+
