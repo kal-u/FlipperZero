@@ -28,8 +28,10 @@ Le protocole est constitué d'un en-tête comprenant :
 * une synchronisation
 
 puis un code unique et fixe codé sur 24 bits qui est **00A833**
+
 Chaque caractère de ce code est codé sur 4 bits.
-Les bits de poids faible sont envoyés en premier ce qui donne un code émis **338A00*
+
+Les bits de poids faible sont envoyés en premier ce qui donne un code émis **338A00**
 
 Vous trouverez sur les schémas ci-dessous, tous les éléments pour la génération du fichier RAW qui permet de déclencher l'activation du dispositif sonore.
 
@@ -39,12 +41,19 @@ Vous retrouverez dans le fichier **Activation dispositifs sonores nf-s32002.sub*
 * Préambule : 207 -208 207 -208 
 * Synchronisation : 625 -312 313 -208 207 
 * Code
-	**3** : -500 500 -250 250 -250 250 
-	**3** : -500 500 -250 250 -250 250 
-	**8** : -250 250 -250 250 -250 250 -500 
-	**A** : 250 -250 500 -250 250 -500
-	**0** : 250 -250 250 -250 250 -250 250 -250 
-	**0** : 250 -250 250 -250 250 -250 250 -250
+  
+	* **3** : -500 500 -250 250 -250 250
+   
+	* **3** : -500 500 -250 250 -250 250
+  
+	* **8** : -250 250 -250 250 -250 250 -500
+  
+	* **A** : 250 -250 500 -250 250 -500
+  
+	* **0** : 250 -250 250 -250 250 -250 250 -250
+  
+	* **0** : 250 -250 250 -250 250 -250 250 -250
+  
 
 
 *Les nombres positifs représentent le temps en microsecondes à l'état haut et les nombres négatifs à l'état bas.*
