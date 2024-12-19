@@ -39,7 +39,7 @@ print()
 
 # Fonction pour vérifier si l'identifiant est valide
 def is_valid_sensor_id(sensor_id):
-    if 0 <= int(sensor_id) <= 99:
+    if 0 <= int(sensor_id) <= 999:
         return True
     else:
         return False
@@ -86,7 +86,7 @@ while True:
         sensor_id = int(sensor_id)
         break
     else:
-        print("L'identifiant doit être un nombre de 2 chiffres. Veuillez réessayer.")
+        print("L'identifiant doit être un nombre de 3 chiffres maximum. Veuillez réessayer.")
 
 # Demander l'état de la batterie à l'utilisateur
 while True:
