@@ -89,7 +89,7 @@ Entrez le nom du fichier (avec l'extension .sub) : th.sub
 Le fichier th.sub a été créé avec succès.
 ```
 
-![Envoi du fichier th.sub](https://github.com/kal-u/FlipperZero/blob/main/Sub-GHz/flipper_subGHz_Nexus-TH.png)
+![Envoi du fichier th.sub](https://github.com/kal-u/FlipperZero/blob/main/Sub-GHz/nexus-th/flipper_subGHz_Nexus-TH.png)
 
 
 
