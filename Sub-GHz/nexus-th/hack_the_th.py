@@ -25,6 +25,14 @@ clear_console()
 
 # Affichage du banner
 def print_banner(text, width=80, fill_char='*'):
+    """
+    Affiche un banner de texte centré sur plusieurs lignes.
+    
+    Args:
+        text (str): Le texte à afficher dans le banner.
+        width (int): La largeur du banner (par défaut 80).
+        fill_char (str): Le caractère à utiliser pour remplir le banner (par défaut '*').
+    """
     lines = text.split('\n')
     max_length = max(len(line) for line in lines)
     
@@ -33,13 +41,13 @@ def print_banner(text, width=80, fill_char='*'):
         print(f"{fill_char} {line.center(max_length)} {fill_char}")
     print(fill_char * (max_length+4))
 
-# Affichage du banner
-print_banner("Script de generation d'un fichier .sub (Sub GHz)\npour Flipper Zero\npar Kalu", fill_char='#')
+# Exemple d'utilisation
+print_banner("Script de generation d'un fichier .sub (Sub GHz)\npour Flipper Zero\nPar Kalu", fill_char='#')
 print()
 
 # Fonction pour vérifier si l'identifiant est valide
 def is_valid_sensor_id(sensor_id):
-    if 0 <= int(sensor_id) <= 999:
+    if 0 <= int(sensor_id) <= 300 :
         return True
     else:
         return False
@@ -60,10 +68,14 @@ def is_valid_sensor_channel(sensor_channel):
 
 # Fonction pour vérifier si la température est valide
 def is_valid_temperature(temperature):
-    if 0 <= int(temperature) <= 99:
-        return True
-    else:
-        return False
+    try:
+        temp = float(temperature)
+        if -50.0 <= temp <= 99.0:
+            return True
+    except ValueError:
+        pass
+    return False
+
 
 # Fonction pour vérifier si l'humidité est valide
 def is_valid_humidity(humidity):
@@ -86,7 +98,7 @@ while True:
         sensor_id = int(sensor_id)
         break
     else:
-        print("L'identifiant doit être un nombre de 3 chiffres maximum. Veuillez réessayer.")
+        print("L'identifiant doit être un nombre de 2 chiffres. Veuillez réessayer.")
 
 # Demander l'état de la batterie à l'utilisateur
 while True:
@@ -109,13 +121,15 @@ while True:
 
 # Demander la température à l'utilisateur
 while True:
-    temperature = input("Entrez la température (entre 0 et 99 degrés) : ")
+    temperature = input("Entrez la température (entre -50.0 et 99.0 degrés) : ")
     if is_valid_temperature(temperature):
-        temperature = int(temperature)
-        temp = temperature * 10
+        temperature = float(temperature)
+        temp = int(temperature * 10)  # Conversion en dixièmes
+        if temp < 0:  # Gestion des températures négatives avec complément à deux
+            temp = (1 << 12) + temp  # Convertir en valeur signée 12 bits
         break
     else:
-        print("La température doit être comprise entre 0 et 99 degrés. Veuillez réessayer.")
+        print("La température doit être comprise entre -50.0 et 99.0 degrés. Veuillez réessayer.")
 
 # Demander l'humidité à l'utilisateur
 while True:
@@ -139,7 +153,10 @@ binary_number = "00000000 00000000 00000000 0000"
 binary_sensor_id = bin(sensor_id)[2:].zfill(8)
 binary_battery_state = bin(battery_state)[2:].zfill(1)
 binary_channel = bin(channel)[2:].zfill(2)
-binary_temperature = bin(temp)[2:].zfill(12)
+
+# Conversion en binaire avec gestion des températures négatives
+binary_temperature = bin(temp & 0xFFF)[2:].zfill(12)  # Force l'encodage sur 12 bits
+
 binary_humidity = bin(humidity)[2:].zfill(8)
 binary_number = binary_number + str(binary_sensor_id) + str(binary_battery_state) + "0" + str(binary_channel) + str(binary_temperature) + "1111" + str(binary_humidity)
 binary_number = binary_number.replace(" ", "")
@@ -192,7 +209,7 @@ Hum: {}
 Ts: {}
 Ch: {}
 Btn: 255
-Temp: {}.000000
+Temp: {:.6f}
 """.format(sensor_id, data, battery_state, humidity, ts, sensor_channel, temperature)
 
 # Créer le fichier et y écrire le contenu
