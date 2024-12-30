@@ -55,6 +55,10 @@ Vient ensuite la commande qui peut-être générée afin de couvrir toutes les c
 
 Attention, dans mon cas, le flipper zero n'accepte pas les commandes à partir de "80 00 00 00"
 
-**Référence :**
-Github de Derek Jamison > : https://github.com/jamisonderek/flipper-zero-tutorials/wiki/Infrared
 
+
+**Références :**
+
+Github de Derek Jamison : https://github.com/jamisonderek/flipper-zero-tutorials/wiki/Infrared
+
+Github de UberGuidoZ - Flipper IRDB : https://github.com/UberGuidoZ/Flipper-IRDB#contributing
