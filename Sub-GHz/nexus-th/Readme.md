@@ -1,7 +1,4 @@
-# Sub-GHz
-Cette section regroupe mes différents projets autour de l'analyse ou de la création de fichier .sub de l'application Sub-GHz
-
-## Hack the Th
+# Hack the Th
 Ce script a pour objectif de générer un fichier .sub utilisable par l'application Sub GHz du Flipper Zero
 pour simuler l'envoi d'information d'une sonde pour station météo utilisant le protocole Nexus-TH.
 
