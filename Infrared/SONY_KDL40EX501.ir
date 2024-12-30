@@ -1,0 +1,272 @@
+Filetype: IR signals file
+Version: 1
+# 
+name: Power
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 15 00 00 00
+# 
+name: Vol_up
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 12 00 00 00
+# 
+name: Vol_dn
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 13 00 00 00
+# 
+name: Ch_next
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 10 00 00 00
+# 
+name: Ch_prev
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 11 00 00 00
+# 
+name: Mute
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 14 00 00 00
+# 
+name: Sources
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 25 00 00 00
+# 
+name: Haut
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 74 00 00 00
+# 
+name: Bas
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 75 00 00 00
+# 
+name: Droite
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 33 00 00 00
+# 
+name: Gauche
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 34 00 00 00
+# 
+name: Ok
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 65 00 00 00
+# 
+name: Home
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 60 00 00 00
+# 
+name: Return
+type: parsed
+protocol: SIRC15
+address: 97 00 00 00
+command: 23 00 00 00
+# 
+name: Options
+type: parsed
+protocol: SIRC15
+address: 97 00 00 00
+command: 36 00 00 00
+# 
+name: Guide
+type: parsed
+protocol: SIRC15
+address: A4 00 00 00
+command: 5B 00 00 00
+# 
+name: 1
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 00 00 00 00
+# 
+name: 2
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 01 00 00 00
+# 
+name: 3
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 02 00 00 00
+# 
+name: 4
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 03 00 00 00
+# 
+name: 5
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 04 00 00 00
+# 
+name: 6
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 05 00 00 00
+# 
+name: 7
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 06 00 00 00
+# 
+name: 8
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 07 00 00 00
+# 
+name: 9
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 08 00 00 00
+# 
+name: 0
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 09 00 00 00
+# 
+name: Audio
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 17 00 00 00
+# 
+name: Digital Analog
+type: parsed
+protocol: SIRC15
+address: 77 00 00 00
+command: 0D 00 00 00
+# 
+name: Scene sel
+type: parsed
+protocol: SIRC15
+address: 1A 00 00 00
+command: 78 00 00 00
+# 
+name: Etendre
+type: parsed
+protocol: SIRC15
+address: A4 00 00 00
+command: 3D 00 00 00
+# 
+name: Internet
+type: parsed
+protocol: SIRC15
+address: 1A 00 00 00
+command: 79 00 00 00
+# 
+name: Exit
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 63 00 00 00
+# 
+name: Theatre
+type: parsed
+protocol: SIRC15
+address: 77 00 00 00
+command: 60 00 00 00
+#
+name: *Mode son
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 28 00 00 00
+#
+name: *Surround
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 29 00 00 00
+#
+name: *Power Off
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 2F 00 00 00
+#
+name: *Scene
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 3A 00 00 00
+#
+name: *Eco energie
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 3E 00 00 00
+#
+name: *Teletexte
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 3F 00 00 00
+#
+name: *AV1
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 40 00 00 00
+#
+name: *AV2
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 41 00 00 00
+#
+name: *AV3
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 42 00 00 00
+#
+name: *PC
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 43 00 00 00
+#
+name: *Mode Image
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 64 00 00 00
+#
+name: *Test
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 7F 00 00 00

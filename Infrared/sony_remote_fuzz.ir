@@ -1,0 +1,1538 @@
+Filetype: IR signals file
+Version: 1
+#
+name: Cmd 00 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 00 00 00 00
+#
+name: Cmd 01 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 01 00 00 00
+#
+name: Cmd 02 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 02 00 00 00
+#
+name: Cmd 03 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 03 00 00 00
+#
+name: Cmd 04 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 04 00 00 00
+#
+name: Cmd 05 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 05 00 00 00
+#
+name: Cmd 06 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 06 00 00 00
+#
+name: Cmd 07 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 07 00 00 00
+#
+name: Cmd 08 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 08 00 00 00
+#
+name: Cmd 09 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 09 00 00 00
+#
+name: Cmd 0A 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 0A 00 00 00
+#
+name: Cmd 0B 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 0B 00 00 00
+#
+name: Cmd 0C 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 0C 00 00 00
+#
+name: Cmd 0D 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 0D 00 00 00
+#
+name: Cmd 0E 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 0E 00 00 00
+#
+name: Cmd 0F 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 0F 00 00 00
+#
+name: Cmd 10 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 10 00 00 00
+#
+name: Cmd 11 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 11 00 00 00
+#
+name: Cmd 12 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 12 00 00 00
+#
+name: Cmd 13 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 13 00 00 00
+#
+name: Cmd 14 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 14 00 00 00
+#
+name: Cmd 15 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 15 00 00 00
+#
+name: Cmd 16 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 16 00 00 00
+#
+name: Cmd 17 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 17 00 00 00
+#
+name: Cmd 18 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 18 00 00 00
+#
+name: Cmd 19 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 19 00 00 00
+#
+name: Cmd 1A 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 1A 00 00 00
+#
+name: Cmd 1B 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 1B 00 00 00
+#
+name: Cmd 1C 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 1C 00 00 00
+#
+name: Cmd 1D 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 1D 00 00 00
+#
+name: Cmd 1E 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 1E 00 00 00
+#
+name: Cmd 1F 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 1F 00 00 00
+#
+name: Cmd 20 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 20 00 00 00
+#
+name: Cmd 21 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 21 00 00 00
+#
+name: Cmd 22 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 22 00 00 00
+#
+name: Cmd 23 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 23 00 00 00
+#
+name: Cmd 24 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 24 00 00 00
+#
+name: Cmd 25 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 25 00 00 00
+#
+name: Cmd 26 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 26 00 00 00
+#
+name: Cmd 27 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 27 00 00 00
+#
+name: Cmd 28 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 28 00 00 00
+#
+name: Cmd 29 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 29 00 00 00
+#
+name: Cmd 2A 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 2A 00 00 00
+#
+name: Cmd 2B 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 2B 00 00 00
+#
+name: Cmd 2C 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 2C 00 00 00
+#
+name: Cmd 2D 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 2D 00 00 00
+#
+name: Cmd 2E 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 2E 00 00 00
+#
+name: Cmd 2F 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 2F 00 00 00
+#
+name: Cmd 30 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 30 00 00 00
+#
+name: Cmd 31 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 31 00 00 00
+#
+name: Cmd 32 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 32 00 00 00
+#
+name: Cmd 33 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 33 00 00 00
+#
+name: Cmd 34 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 34 00 00 00
+#
+name: Cmd 35 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 35 00 00 00
+#
+name: Cmd 36 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 36 00 00 00
+#
+name: Cmd 37 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 37 00 00 00
+#
+name: Cmd 38 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 38 00 00 00
+#
+name: Cmd 39 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 39 00 00 00
+#
+name: Cmd 3A 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 3A 00 00 00
+#
+name: Cmd 3B 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 3B 00 00 00
+#
+name: Cmd 3C 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 3C 00 00 00
+#
+name: Cmd 3D 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 3D 00 00 00
+#
+name: Cmd 3E 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 3E 00 00 00
+#
+name: Cmd 3F 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 3F 00 00 00
+#
+name: Cmd 40 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 40 00 00 00
+#
+name: Cmd 41 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 41 00 00 00
+#
+name: Cmd 42 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 42 00 00 00
+#
+name: Cmd 43 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 43 00 00 00
+#
+name: Cmd 44 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 44 00 00 00
+#
+name: Cmd 45 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 45 00 00 00
+#
+name: Cmd 46 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 46 00 00 00
+#
+name: Cmd 47 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 47 00 00 00
+#
+name: Cmd 48 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 48 00 00 00
+#
+name: Cmd 49 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 49 00 00 00
+#
+name: Cmd 4A 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 4A 00 00 00
+#
+name: Cmd 4B 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 4B 00 00 00
+#
+name: Cmd 4C 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 4C 00 00 00
+#
+name: Cmd 4D 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 4D 00 00 00
+#
+name: Cmd 4E 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 4E 00 00 00
+#
+name: Cmd 4F 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 4F 00 00 00
+#
+name: Cmd 50 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 50 00 00 00
+#
+name: Cmd 51 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 51 00 00 00
+#
+name: Cmd 52 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 52 00 00 00
+#
+name: Cmd 53 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 53 00 00 00
+#
+name: Cmd 54 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 54 00 00 00
+#
+name: Cmd 55 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 55 00 00 00
+#
+name: Cmd 56 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 56 00 00 00
+#
+name: Cmd 57 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 57 00 00 00
+#
+name: Cmd 58 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 58 00 00 00
+#
+name: Cmd 59 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 59 00 00 00
+#
+name: Cmd 5A 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 5A 00 00 00
+#
+name: Cmd 5B 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 5B 00 00 00
+#
+name: Cmd 5C 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 5C 00 00 00
+#
+name: Cmd 5D 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 5D 00 00 00
+#
+name: Cmd 5E 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 5E 00 00 00
+#
+name: Cmd 5F 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 5F 00 00 00
+#
+name: Cmd 60 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 60 00 00 00
+#
+name: Cmd 61 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 61 00 00 00
+#
+name: Cmd 62 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 62 00 00 00
+#
+name: Cmd 63 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 63 00 00 00
+#
+name: Cmd 64 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 64 00 00 00
+#
+name: Cmd 65 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 65 00 00 00
+#
+name: Cmd 66 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 66 00 00 00
+#
+name: Cmd 67 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 67 00 00 00
+#
+name: Cmd 68 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 68 00 00 00
+#
+name: Cmd 69 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 69 00 00 00
+#
+name: Cmd 6A 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 6A 00 00 00
+#
+name: Cmd 6B 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 6B 00 00 00
+#
+name: Cmd 6C 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 6C 00 00 00
+#
+name: Cmd 6D 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 6D 00 00 00
+#
+name: Cmd 6E 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 6E 00 00 00
+#
+name: Cmd 6F 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 6F 00 00 00
+#
+name: Cmd 70 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 70 00 00 00
+#
+name: Cmd 71 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 71 00 00 00
+#
+name: Cmd 72 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 72 00 00 00
+#
+name: Cmd 73 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 73 00 00 00
+#
+name: Cmd 74 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 74 00 00 00
+#
+name: Cmd 75 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 75 00 00 00
+#
+name: Cmd 76 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 76 00 00 00
+#
+name: Cmd 77 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 77 00 00 00
+#
+name: Cmd 78 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 78 00 00 00
+#
+name: Cmd 79 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 79 00 00 00
+#
+name: Cmd 7A 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 7A 00 00 00
+#
+name: Cmd 7B 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 7B 00 00 00
+#
+name: Cmd 7C 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 7C 00 00 00
+#
+name: Cmd 7D 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 7D 00 00 00
+#
+name: Cmd 7E 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 7E 00 00 00
+#
+name: Cmd 7F 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 7F 00 00 00
+#
+name: Cmd 80 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 80 00 00 00
+#
+name: Cmd 81 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 81 00 00 00
+#
+name: Cmd 82 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 82 00 00 00
+#
+name: Cmd 83 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 83 00 00 00
+#
+name: Cmd 84 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 84 00 00 00
+#
+name: Cmd 85 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 85 00 00 00
+#
+name: Cmd 86 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 86 00 00 00
+#
+name: Cmd 87 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 87 00 00 00
+#
+name: Cmd 88 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 88 00 00 00
+#
+name: Cmd 89 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 89 00 00 00
+#
+name: Cmd 8A 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 8A 00 00 00
+#
+name: Cmd 8B 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 8B 00 00 00
+#
+name: Cmd 8C 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 8C 00 00 00
+#
+name: Cmd 8D 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 8D 00 00 00
+#
+name: Cmd 8E 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 8E 00 00 00
+#
+name: Cmd 8F 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 8F 00 00 00
+#
+name: Cmd 90 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 90 00 00 00
+#
+name: Cmd 91 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 91 00 00 00
+#
+name: Cmd 92 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 92 00 00 00
+#
+name: Cmd 93 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 93 00 00 00
+#
+name: Cmd 94 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 94 00 00 00
+#
+name: Cmd 95 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 95 00 00 00
+#
+name: Cmd 96 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 96 00 00 00
+#
+name: Cmd 97 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 97 00 00 00
+#
+name: Cmd 98 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 98 00 00 00
+#
+name: Cmd 99 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 99 00 00 00
+#
+name: Cmd 9A 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 9A 00 00 00
+#
+name: Cmd 9B 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 9B 00 00 00
+#
+name: Cmd 9C 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 9C 00 00 00
+#
+name: Cmd 9D 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 9D 00 00 00
+#
+name: Cmd 9E 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 9E 00 00 00
+#
+name: Cmd 9F 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: 9F 00 00 00
+#
+name: Cmd A0 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: A0 00 00 00
+#
+name: Cmd A1 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: A1 00 00 00
+#
+name: Cmd A2 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: A2 00 00 00
+#
+name: Cmd A3 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: A3 00 00 00
+#
+name: Cmd A4 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: A4 00 00 00
+#
+name: Cmd A5 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: A5 00 00 00
+#
+name: Cmd A6 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: A6 00 00 00
+#
+name: Cmd A7 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: A7 00 00 00
+#
+name: Cmd A8 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: A8 00 00 00
+#
+name: Cmd A9 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: A9 00 00 00
+#
+name: Cmd AA 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: AA 00 00 00
+#
+name: Cmd AB 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: AB 00 00 00
+#
+name: Cmd AC 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: AC 00 00 00
+#
+name: Cmd AD 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: AD 00 00 00
+#
+name: Cmd AE 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: AE 00 00 00
+#
+name: Cmd AF 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: AF 00 00 00
+#
+name: Cmd B0 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: B0 00 00 00
+#
+name: Cmd B1 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: B1 00 00 00
+#
+name: Cmd B2 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: B2 00 00 00
+#
+name: Cmd B3 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: B3 00 00 00
+#
+name: Cmd B4 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: B4 00 00 00
+#
+name: Cmd B5 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: B5 00 00 00
+#
+name: Cmd B6 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: B6 00 00 00
+#
+name: Cmd B7 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: B7 00 00 00
+#
+name: Cmd B8 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: B8 00 00 00
+#
+name: Cmd B9 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: B9 00 00 00
+#
+name: Cmd BA 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: BA 00 00 00
+#
+name: Cmd BB 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: BB 00 00 00
+#
+name: Cmd BC 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: BC 00 00 00
+#
+name: Cmd BD 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: BD 00 00 00
+#
+name: Cmd BE 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: BE 00 00 00
+#
+name: Cmd BF 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: BF 00 00 00
+#
+name: Cmd C0 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: C0 00 00 00
+#
+name: Cmd C1 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: C1 00 00 00
+#
+name: Cmd C2 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: C2 00 00 00
+#
+name: Cmd C3 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: C3 00 00 00
+#
+name: Cmd C4 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: C4 00 00 00
+#
+name: Cmd C5 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: C5 00 00 00
+#
+name: Cmd C6 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: C6 00 00 00
+#
+name: Cmd C7 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: C7 00 00 00
+#
+name: Cmd C8 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: C8 00 00 00
+#
+name: Cmd C9 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: C9 00 00 00
+#
+name: Cmd CA 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: CA 00 00 00
+#
+name: Cmd CB 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: CB 00 00 00
+#
+name: Cmd CC 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: CC 00 00 00
+#
+name: Cmd CD 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: CD 00 00 00
+#
+name: Cmd CE 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: CE 00 00 00
+#
+name: Cmd CF 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: CF 00 00 00
+#
+name: Cmd D0 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: D0 00 00 00
+#
+name: Cmd D1 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: D1 00 00 00
+#
+name: Cmd D2 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: D2 00 00 00
+#
+name: Cmd D3 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: D3 00 00 00
+#
+name: Cmd D4 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: D4 00 00 00
+#
+name: Cmd D5 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: D5 00 00 00
+#
+name: Cmd D6 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: D6 00 00 00
+#
+name: Cmd D7 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: D7 00 00 00
+#
+name: Cmd D8 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: D8 00 00 00
+#
+name: Cmd D9 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: D9 00 00 00
+#
+name: Cmd DA 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: DA 00 00 00
+#
+name: Cmd DB 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: DB 00 00 00
+#
+name: Cmd DC 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: DC 00 00 00
+#
+name: Cmd DD 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: DD 00 00 00
+#
+name: Cmd DE 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: DE 00 00 00
+#
+name: Cmd DF 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: DF 00 00 00
+#
+name: Cmd E0 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: E0 00 00 00
+#
+name: Cmd E1 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: E1 00 00 00
+#
+name: Cmd E2 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: E2 00 00 00
+#
+name: Cmd E3 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: E3 00 00 00
+#
+name: Cmd E4 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: E4 00 00 00
+#
+name: Cmd E5 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: E5 00 00 00
+#
+name: Cmd E6 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: E6 00 00 00
+#
+name: Cmd E7 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: E7 00 00 00
+#
+name: Cmd E8 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: E8 00 00 00
+#
+name: Cmd E9 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: E9 00 00 00
+#
+name: Cmd EA 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: EA 00 00 00
+#
+name: Cmd EB 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: EB 00 00 00
+#
+name: Cmd EC 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: EC 00 00 00
+#
+name: Cmd ED 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: ED 00 00 00
+#
+name: Cmd EE 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: EE 00 00 00
+#
+name: Cmd EF 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: EF 00 00 00
+#
+name: Cmd F0 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: F0 00 00 00
+#
+name: Cmd F1 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: F1 00 00 00
+#
+name: Cmd F2 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: F2 00 00 00
+#
+name: Cmd F3 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: F3 00 00 00
+#
+name: Cmd F4 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: F4 00 00 00
+#
+name: Cmd F5 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: F5 00 00 00
+#
+name: Cmd F6 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: F6 00 00 00
+#
+name: Cmd F7 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: F7 00 00 00
+#
+name: Cmd F8 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: F8 00 00 00
+#
+name: Cmd F9 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: F9 00 00 00
+#
+name: Cmd FA 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: FA 00 00 00
+#
+name: Cmd FB 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: FB 00 00 00
+#
+name: Cmd FC 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: FC 00 00 00
+#
+name: Cmd FD 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: FD 00 00 00
+#
+name: Cmd FE 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: FE 00 00 00
+#
+name: Cmd FF 00 00 00
+type: parsed
+protocol: SIRC
+address: 01 00 00 00
+command: FF 00 00 00
