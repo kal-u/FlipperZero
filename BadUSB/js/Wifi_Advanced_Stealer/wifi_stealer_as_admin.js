@@ -1,4 +1,4 @@
-// Wifi Stealer BadUSB script
+// Wifi Advanced Stealer BadUSB script
 // Ce script ne fonctionne que si l'utilisateur connecté est administrateur de la machine
 // Script Javascript pour Flipper Zero basé sur le travail de Jamison Derek et Miiraak
 // Références : 
