@@ -2,22 +2,22 @@
 
 L'objectif de ce script est de sensibiliser les utilisateurs à la cybersécurité.
 
-Cette démonstration permet d'expliquer que des mauvaises pratiques peuvent conduire à de la divulgation d'informations qui touche personnellement l'utilisateur.
+Cette démonstration permet d'expliquer que des mauvaises pratiques peuvent conduire à de la divulgation d'informations qui touchent personnellement l'utilisateur.
 
 Les mauvaises pratiques traitées sont les suivantes :
 - Ne pas verrouiller sa session lors que l'on quitte son poste
 - Utiliser son ordinateur Windows avec un compte qui possède les droits Administrateur
 - Enregistrer les mots de passe dans son navigateur
 
-Pour ne pas faire un script de plus qui vole seulement le mot de passe Wifi (qui a l'avantage de ne pas nécessite de droits Administrateur), je lance Powershell en Administrateur ce qui permet de récupérer le nom des réseaux Wifi (SSID), l'adresse MAC (BSSID) des points d'accès Wifi sur lesquels s'est connecté l'utilisateur ainsi que la date de première et de dernière connexion.
+Pour ne pas faire un script de plus, qui vole seulement le mot de passe Wifi (ce qui a l'avantage de ne pas nécessiter de droits Administrateur), je lance Powershell en Administrateur ce qui permet de récupérer le nom des réseaux Wifi (SSID), l'adresse MAC (BSSID) des points d'accès Wifi sur lesquels s'est connecté l'utilisateur ainsi que la date de première et de dernière connexion.
 
-Cela permet ensuite de localiser où l'utilisateur s'est connecté grâce à des sites comme ![Wigle.net](https://wigle.net/) ou en utilisant les API Google sur l'outil ![Geowifi](https://github.com/GONZOsint/geowifi)
+Cela permet ensuite de localiser où l'utilisateur s'est connecté grâce à des sites comme [Wigle.net](https://wigle.net/) ou en utilisant les API Google sur l'outil [Geowifi](https://github.com/GONZOsint/geowifi)
 
 Avec la date de dernière connexion, pour un ordinateur de télétravail, on peut déduire assez facilement où habite l'utilisateur.
 Et si on a son adresse, le nom de son réseau Wifi et son mot de passe, alors on a accès à son réseau domestique ce qui ouvre la porte à beaucoup d'options possibles pour un acteur malveillant.
 
-Le script peut également lancer un script de vol de mot de passe stocker dans le navigateur Firefox (payload2.ps1).
-On peut imaginer les ravages que cela peut occasioner pour l'utilisateur en fonction des comptes enregistrés.
+Le script peut également lancer un script de vol de mots de passe stockés dans le navigateur Firefox (payload2.ps1).
+On peut imaginer les ravages que cela peut occasioner pour l'utilisateur en fonction des comptes enregistrés (si l'authentification multi facteurs n'est pas activée sur les sites concernés).
 
 
 ## Disclaimer
