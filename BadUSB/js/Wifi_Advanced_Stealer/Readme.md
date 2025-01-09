@@ -11,6 +11,13 @@ Les mauvaises pratiques traitées sont les suivantes :
 
 Pour ne pas faire un script de plus, qui vole seulement le mot de passe Wifi (ce qui a l'avantage de ne pas nécessiter de droits Administrateur), je lance Powershell en Administrateur ce qui permet de récupérer le nom des réseaux Wifi (SSID), l'adresse MAC (BSSID) des points d'accès Wifi sur lesquels s'est connecté l'utilisateur ainsi que la date de première et de dernière connexion.
 
+*Exemple de sortie du script*
+
+| SSID |        BSSID |             Key |                       LastConnected |      FirstConnected |
+| ---- |        ----- |            --- |                       ------------- |      -------------- |
+| Livebox-ABCD | B2:A3:5A:6F:05:3C | mon$uperPassword |          02/01/2025 16:25:29 | 24/10/2024 12:32:08 |
+
+
 Cela permet ensuite de localiser où l'utilisateur s'est connecté grâce à des sites comme [Wigle.net](https://wigle.net/) ou en utilisant les API Google sur l'outil [Geowifi](https://github.com/GONZOsint/geowifi)
 
 Avec la date de dernière connexion, pour un ordinateur de télétravail, on peut déduire assez facilement où habite l'utilisateur.
