@@ -1,0 +1,15 @@
+jeudi 2 janvier 2025 15:55:42
+
+
+TARGET_PC
+
+IPAddress    SuffixOrigin
+---------    ------------
+192.168.1.32         Dhcp
+
+
+ProfileName      DefaultGatewayMac Key                       
+-----------      ----------------- ---                                        
+Livebox-ABCD  B2:A3:5A:6F:05:3C mon$uperPassword
+
+
