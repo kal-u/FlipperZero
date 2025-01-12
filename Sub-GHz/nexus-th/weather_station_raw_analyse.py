@@ -79,6 +79,8 @@ def process_raw_data(file_path):
             binary_sequence = [0 if num > -1100 else 1 for num in segment]
             
             # Analyser les données de la séquence
+            sensor_binary = binary_sequence[:8] # 8 premiers chiffres
+            sensor_id = int(''.join(map(str, sensor_binary)), 2)  # Convertir en décimal
             battery_status = binary_sequence[8]  # 9ème chiffre
             channel_binary = binary_sequence[10:12]  # 11ème et 12ème chiffres
             channel = int(''.join(map(str, channel_binary)), 2)  # Convertir en décimal
@@ -89,6 +91,7 @@ def process_raw_data(file_path):
 
             # Ajouter les résultats
             results.append({
+                "sensor_id": sensor_id,
                 "sequence": ''.join(map(str, binary_sequence)),
                 "battery_status": "OK" if battery_status == 1 else "Batterie faible",
                 "channel": f"CH{channel + 1}",
@@ -137,6 +140,7 @@ try:
         # Afficher les résultats
         print()
         print(f"\033[96mSequence {i+1}: {highlighted_sequence}\033[0m")
+        print(f"  Identifiant sonde: \033[38;5;214m{result['sensor_id']}\033[0m")
         print(f"  Batterie: {result['battery_status']}")
         print(f"  Canal: \033[92m{result['channel']}\033[0m")
         print(f"  Température: \033[93m{result['temperature']} °C\033[0m")
