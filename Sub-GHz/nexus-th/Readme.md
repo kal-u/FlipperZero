@@ -33,11 +33,22 @@ Le protocole utilisé est **Nexus-TH**.
 De la documentation du produit, on apprend que la station météo est en attente d'une transmission d'une sonde **pendant les 3 premières minutes**.
 
 Pendant cette période de 3 minutes, nos trames sont prises en compte instantanément.
-Passé ce délai, on constate que la station semble observer le cycle suivant : 56 secondes sans écoute (sans doute pour éviter les interférences) puis **1 seconde d'écoute**. 
+Passé ce délai, on constate que la station semble observer le cycle suivant : 1 minute et 53 secondes sans écoute (sans doute pour éviter les interférences) puis **1 seconde d'écoute**. 
 
-Le cadencement avec la sonde est très précis. Si on souhaite pousser nos valeurs plutôt que celle d'une sonde, il faut arriver à envoyer le signal pendant la seconde d'écoute  de la station météo et avant la sonde (ou isoler la sonde si c'est possible).
+*Si on souhaite, basculer sur un autre canal après les 3 minutes initiales (au démarrage de la station météo), ou resynchroniser une sonde, il faut rester appuyer quelques secondes sur le bouton Channel de la station météo.*
 
-Si on souhaite, basculer sur un autre canal après les 3 minutes initiales (au démarrage de la station météo), ou resynchroniser une sonde, il faut rester appuyer quelques secondes sur le bouton Channel de la station météo.
+Le cadencement avec la sonde est très précis. Si on souhaite pousser nos valeurs plutôt que celle d'une sonde, il faut arriver à envoyer le signal pendant la seconde d'écoute de la station météo et avant la sonde (ou isoler la sonde si c'est possible).
+
+C'est pour cela que j'ai créé le script **hack_the_th_flood.js** (à placer dans le dossier SD Card/apps/Scripts/).
+
+Ce script permet l'envoi en continue du fichier .sub produit par mon script hack_the_th.py
+
+Cela permet de définir nos propres valeurs d'humidité et de température à la place d'un capteur déjà synchronisé avec sa station météo.
+
+Par défaut, l'envoi dure environ 2 min car la station météo accepte les mises à jour tous les 2 cycles de 57 secondes (soit environ 1 min 54 s).
+
+
+## Détails de la trame
 
 Il s'agit d'une trame de **36 bits**
 
