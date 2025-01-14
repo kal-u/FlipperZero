@@ -1,5 +1,5 @@
 # Hack the Th
-Ce repo a pour objectif d'expliquer et de démontrer comment modifier les valeurs affichées par une station météo utilisant le protocole de communication radio Nexus-TH.
+Ce repo a pour objectif d'expliquer et de démontrer comment modifier les valeurs affichées par une station météo utilisant le protocole de communication radio Nexus.
 
 Pour cela, il faut capturer un échange entre une sonde et une station météo au format RAW. Analyser ce fichier pour déterminer l'identifiant de la sonde et le canal utilisé.
 
@@ -31,7 +31,7 @@ Le Flipper permet d'observer que la communication entre la sonde extérieure et 
 
 La fréquence de communication est toutes les **56,75 secondes**.
 
-Le protocole utilisé est **Nexus-TH**.
+Le protocole utilisé est **Nexus**.
 
 De la documentation du produit, on apprend que la station météo est en attente d'une transmission d'une sonde **pendant les 3 premières minutes**.
 
