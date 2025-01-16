@@ -32,7 +32,6 @@ function sendSubGHzLoop(filePath) {
 	//if(iteration > 5) {
 	//	break;
         //	eventLoop.stop();
-	}//
     }
 }
 
