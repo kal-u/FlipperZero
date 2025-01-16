@@ -1,31 +1,108 @@
-// Hack the th - Flood
-// Auteur : Kalu
-// Date : 13-01-2025
-// Ce script permet l'envoi en continue du fichier .sub produit par mon script hack_the_th.py
-// Cela permet de définir nos propres valeurs d'humidité et de température à la place
-// d'un capteur déjà synchronisé avec sa station météo.
-// Par défaut, l'envoi dure environ 2 min car la station météo accepte les mises à jour tous
-// les 2 cycles de 57 secondes (soit environ 1 min 54 s).
-
-// Import de modules
+// Importation des modules
+let eventLoop = require("event_loop");
+let gui = require("gui");
+let dialogView = require("gui/dialog");
+let filePicker = require("gui/file_picker");
+let submenuView = require("gui/submenu");
 let notify = require("notification");
 let subghz = require("subghz");
 
-// Définition des variables
-let iteration = 4; // Environ 2 min
-let nb_send = 400; // Nombre d'envoi par transmit
+// Fonction pour l'émission du signal en boucle
+function txFile(_sub, _index, filePath) {
+	
+	// Send file Sub-GHz
+	let result = subghz.transmitFile(filePath);
 
-subghz.setup();
-
-print("C est parti !");
-
-for (let i = 0; i < iteration; i++) {
-    let result = subghz.transmitFile("/ext/subghz/th.sub",nb_send);
-    if (result) { print("."); 
-     } else { print("#"); }
-    notify.blink("cyan", "short");
+	
+	// Blinking led
+	notify.blink("cyan", "short");
+	
+	// loop
+	eventLoop.subscribe(eventLoop.timer("oneshot",1), txFile, filePath);
 }
 
-notify.success();
-subghz.end();
-print("Fin.");
+// 
+function sendSubGHzLoop(filePath) {
+	views.helloDialog.set("text", "Envoi du fichier en boucle \n" + filePath + "\n\nFlood en cours ...");
+	gui.viewDispatcher.switchTo(views.helloDialog);
+	delay(2000);
+	gui.viewDispatcher.switchTo(views.stop);
+	
+	// Infinite loop
+	txFile(0,0,filePath);
+}
+
+let views = {
+	splash: dialogView.makeWith({
+	text: "Hack the th\nFloooood !!!",
+	}),
+	helloDialog: dialogView.make(),
+	menu: submenuView.makeWith({
+		header: "Choisi ton destin",
+		items: [
+			"Choisi un fichier à envoyer",
+			"Sortir",
+		],
+	}),
+	stop: submenuView.makeWith({
+		header: "Arrete quand tu veux",
+		items: [
+			"STOP !!!",
+		],
+	}),
+};
+
+
+// Ecran d'accueil
+gui.viewDispatcher.switchTo(views.splash);
+delay(2000);
+gui.viewDispatcher.switchTo(views.menu);
+
+// Traitement du menu stop
+eventLoop.subscribe(views.stop.chosen, function (_sub, index, gui, eventLoop, views) {
+	if (index === 0) {
+		eventLoop.stop();
+		notify.success();
+	}
+	else {
+		eventLoop.stop();
+		notify.success();
+	}
+}, gui, eventLoop, views);
+
+// Traitement du premier menu
+eventLoop.subscribe(views.menu.chosen, function (_sub, index, gui, eventLoop, views) {
+	if (index === 0) {
+		let path = filePicker.pickFile("/ext/subghz/", "sub");
+		if (path) {
+			views.helloDialog.set("text", "Fichier choisi:\n" + path);
+		} else {
+			views.helloDialog.set("text", "Aucun fichier choisi :(");
+			break;
+		}
+		gui.viewDispatcher.switchTo(views.helloDialog);
+
+		subghz.setup();
+
+		// Lancer le flood
+		sendSubGHzLoop(path);
+
+	} else if (index === 1) {
+		eventLoop.stop();
+		subghz.end();
+		notify.success();
+	}
+}, gui, eventLoop, views);
+
+// Arret quand on presse le bouton "back"
+eventLoop.subscribe(gui.viewDispatcher.navigation, function (_sub, _, gui, views, eventLoop) {
+	if (gui.viewDispatcher.currentView === views.stop) {
+		eventLoop.stop();
+		subghz.end();
+		return;
+	}
+}, gui, views, eventLoop);
+
+eventLoop.run();
+
+
