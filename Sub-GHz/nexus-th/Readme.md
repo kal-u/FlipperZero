@@ -36,7 +36,9 @@ Le protocole utilisé est **Nexus**.
 De la documentation du produit, on apprend que la station météo est en attente d'une transmission d'une sonde **pendant les 3 premières minutes**.
 
 Pendant cette période de 3 minutes, nos trames sont prises en compte instantanément.
-Passé ce délai, on constate que la station semble observer le cycle suivant : 1 minute et 53 secondes sans écoute (sans doute pour éviter les interférences) puis **1 seconde d'écoute**. 
+Passé ce délai, on constate que la station semble observer le cycle suivant : 56 secondes sans écoute (sans doute pour éviter les interférences) puis **1 seconde d'écoute**. 
+
+*Certaines stations météo prennent en compte les données des sondes tous les 2 cycles soit 1 minute et 53 secondes*
 
 *Si on souhaite, basculer sur un autre canal après les 3 minutes initiales (au démarrage de la station météo), ou resynchroniser une sonde, il faut rester appuyé quelques secondes sur le bouton Channel de la station météo.*
 
@@ -44,11 +46,9 @@ Le cadencement avec la sonde est très précis. Si on souhaite pousser nos valeu
 
 C'est pour cela que j'ai créé le script **hack_the_th_flood.js** (à placer dans le dossier SD Card/apps/Scripts/).
 
-Ce script permet l'envoi en continue du fichier .sub produit par mon script hack_the_th.py
+Ce script permet l'envoi en continue du fichier .sub, produit par mon script hack_the_th.py
 
 Cela permet de définir nos propres valeurs d'humidité et de température à la place d'un capteur déjà synchronisé avec sa station météo.
-
-Par défaut, l'envoi dure environ 2 min car la station météo accepte les mises à jour tous les 2 cycles de 57 secondes (soit environ 1 min 54 s).
 
 
 ## Détails de la trame
@@ -66,7 +66,7 @@ La signification des bits:
 
 >Batterie – indicateur de batterie faible; 1 – batterie ok, 0 – batterie faible
 
->Un bit sépare le bit qui indique l'état de la batterie et les 2 bits qui indiquent le canal (ce bit est toujours à 0 sauf lorsqu'on appuie sur le TX d'une sonde où il est à 1 avec pour impact de générer un bip côté station météo en plus de la mise à jour des informations)
+>Un bit sépare le bit qui indique l'état de la batterie et les 2 bits qui indiquent le canal (ce bit est toujours à 0, sauf lorsqu'on force une transmission en appuyant sur le bouton TX d'une sonde. Alors ce bit passe à 1 avec pour impact de générer un bip, sur certaines stations météo, en plus de la mise à jour des informations)
 
 >Canal - numéro de canal, 0 – premier canal (CH1), 1 – (CH2), 2 - (CH3)
 
@@ -93,7 +93,7 @@ Ce script python, à exécuter sur PC, a pour objectif de forger un fichier .sub
 - l'identifiant de la sonde et du canal récupérés précédemment
 - les valeurs de température, d'humidité et d'état de la batterie souhaitées
 
-## hack_the_th.js
+## hack_the_th_flood.js
 Ce script js à placer sur le Flipper Zero dans le dossier *SD Card/apps/Scripts/* permet d'envoyer en boucler le fichier .sub forgé précédemment pour forcer la station météo à prendre en compte nos valeurs à la place de celle de la sonde déjà connectée à la station météo.
 Remarque : Le script ne dure que 2 minutes mais il serait tout à fait possible de faire une boucle infinie.
 
