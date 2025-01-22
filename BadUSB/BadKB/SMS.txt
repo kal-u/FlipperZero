@@ -1,0 +1,18 @@
+REM Envoyer un SMS à quelqu'un
+GUI s
+DELAY 750
+CTRL n
+REM Ecrire un nouveau message
+STRING Nom du destinataire
+DELAY 750
+TAB
+DELAY 200
+ENTER
+DELAY 500
+STRING_DELAY 50
+STRING Salut
+TAB
+TAB
+ENTER
+
+
