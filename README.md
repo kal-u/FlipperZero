@@ -7,3 +7,4 @@ Ce repository regroupe mon travail autour du Flipper Zero et de ces applications
 -	Déclenchement des systèmes sonores d'assistance aux personnes aveugles ou malvoyantes sur la voie publique
 -	Piratage d'une station météo
 -	Extraction avancée de données Wifi sur un PC Windows 11
+-	Scripts Bad KB (bluetooth) pour Android (SMS / MAIL / WEB)
