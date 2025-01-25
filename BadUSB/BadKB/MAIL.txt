@@ -1,0 +1,36 @@
+REM Envoyer un mail a quelqu un
+GUI e
+REM Ouvre Gmail
+DELAY 1000
+CTRL n
+REM Ecrire un nouveau message
+DELAY 100
+STRING email@destinataire.fr
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+STRING Test
+TAB
+DELAY 100
+STRING Ceci est un mail de test
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+ENTER
+REM Ouvre le panneau avec les applications ouvertes
+ALT TAB
+DELAY 1000
+DOWN
+DELAY 100
+ENTER

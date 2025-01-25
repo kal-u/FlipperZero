@@ -3,7 +3,7 @@ GUI s
 DELAY 750
 CTRL n
 REM Ecrire un nouveau message
-STRING Nom du destinataire
+STRING <Nom du destinataire>
 DELAY 750
 TAB
 DELAY 200

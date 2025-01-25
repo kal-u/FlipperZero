@@ -1,9 +1,7 @@
-REM Reference : https://github.com/desktopsetup/BadDroid/blob/main/BadDroid%20Command%20List.txt
-REM Reference : https://github.com/UberGuidoZ/Flipper/blob/main/BadUSB/rickroll-android.txt
 REM Ouvrir une page web
 GUI b
 REM Ouvre Chrome
-DELAY 750
+DELAY 1000
 CTRL l
 STRING https://github.com/kal-u/FlipperZero
 ENTER

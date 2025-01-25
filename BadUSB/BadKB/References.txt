@@ -1,0 +1,3 @@
+REM Tests sur un SAMSUN GALAXY S2x
+REM Reference : https://github.com/desktopsetup/BadDroid/blob/main/BadDroid%20Command%20List.txt
+REM Reference : https://github.com/UberGuidoZ/Flipper/blob/main/BadUSB/rickroll-android.txt
