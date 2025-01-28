@@ -104,6 +104,23 @@ Il n'est pas possible pour le moment de changer le nom du périphérique de stoc
 Avec l'évolution du Javascript sur le Flipper, il sera possible demain de prévoir des menus pour choisir les différentes options.
 
 
+## Mesures de protection
+
+L'objectif de cette démonstration est de sensibiliser les utilisateurs et leur rappeler les bonnes pratiques :
+- Verouiller sa session lorsque l'on quitte son poste de travail
+- Ne jamais travailler avec un compte administrateur
+- Ne pas enregistrer de mots de passe dans son navigateur
+
+Pour ne pas que les données collectées (SSID, BSSID) puissent servir à localiser le logement de l'utilisateur, il peut aussi agir.
+- Pour être retiré de la base Wigle.net, il suffit d'envoyer un mail WiGLE-admin[at]WiGLE.net en indiquant son SSID et BSSID
+- Pour être retirer des bases Google et Mozilla (et ne plus apparaitre dans les collectes), il faut ajouter le suffixe "_nomap" à son SSID (Exemple : Livebox-ABCD devient Livebox-ABCD_nomap). Puis lancer une application Google (comme Google Maps) pour accélérer le traitement.
+- Et pour Microsoft, c'est la présence de "_optout" qui permet d'échapper à la collecte. (Exemple : Livebox-ABCD_optout_nomap)
+
+  Références :
+  - WIGLE : https://wigle.net/faq
+  - Google : https://support.google.com/maps/answer/1725632?hl=en
+  - Microsoft : https://learn.microsoft.com/en-us/archive/technet-wiki/32109.disabling-wifi-sense-by-gui-and-gpo-script
+
 ## Références
 - https://developer.flipper.net/flipperzero/doxygen/js.html
 - https://github.com/jamisonderek/flipper-zero-tutorials/wiki/JavaScript
