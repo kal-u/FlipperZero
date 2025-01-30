@@ -26,7 +26,7 @@ Et si on a son adresse, le nom de son réseau Wifi et son mot de passe, alors on
 Le script peut également lancer un script de vol de mots de passe stockés dans le navigateur Firefox (payload2.ps1).
 On peut imaginer les ravages que cela peut occasioner pour l'utilisateur en fonction des comptes enregistrés (si l'authentification multi facteurs n'est pas activée sur les sites concernés).
 
-Utilisation : Copier sur le Flipper Zero le dossier **payloads** dans **/ext/apps_data/mass_storage/** et **wifi_stealer_as_admin.js** dans **/apps/Scripts/**
+Utilisation : Copier sur le Flipper Zero le dossier **payloads** dans **SD Card/apps_data/mass_storage/** et **wifi_stealer_as_admin.js** dans **SD Card/apps/Scripts/**
 
 
 ## Disclaimer
