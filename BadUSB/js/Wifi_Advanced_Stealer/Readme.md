@@ -49,7 +49,7 @@ Firmware : Momentum MNTM-008 (11-11-2024)
 Ordinateur sous Windows 11
 - Session ouverte
 - Utilisateur connecté avec les droits administrateur
-- Firefox 128.5.2esr (64 bits) installé
+- Firefox 128.13.0esr (64 bits) installé
 
 
 ## Le script BadUSB
